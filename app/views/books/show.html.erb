@@ -29,8 +29,8 @@
         </tr>
       </table>
 
-      <%= render "book_comments/comment_index", book: @book %>
-      <%= render "book_comments/form", book: @book, comment: @comment %>
+      <div class="comment_index<%= @book.id %>"><%= render "book_comments/comment_index", book: @book %></div>
+      <div class="comment_form<%= @book.id %>"><%= render "book_comments/form", book: @book, comment: @comment %></div>
     </div>
   </div>
 </div>
