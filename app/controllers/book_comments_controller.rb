@@ -9,6 +9,7 @@ def create
 end
 
 def destroy
+  @book = Book.find(params[:book_id])
   BookComment.find(params[:id]).destroy
   render :index
 end
